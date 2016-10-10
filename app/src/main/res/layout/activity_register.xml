@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText android:id="@+id/re_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/re_password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp" />
+
+        <EditText android:id="@+id/nationalNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nationalNumber"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/username"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button android:id="@+id/cancel"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_alignBaseline="@+id/register"
+            android:layout_alignBottom="@+id/register"
+            android:layout_alignLeft="@+id/date"
+            android:layout_alignStart="@+id/date" />
+
+        <Button android:id="@+id/register"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginBottom="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="Date of Birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="21dp"
+            android:id="@+id/date"
+            android:layout_above="@+id/nation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_password"
+            android:id="@+id/gender">
+        <RadioButton
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:layout_above="@+id/date"
+            android:layout_alignLeft="@+id/date"
+            android:layout_alignStart="@+id/date"
+            android:layout_marginBottom="11dp" />
+
+        <RadioButton
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:layout_alignBaseline="@+id/male"
+            android:layout_alignRight="@+id/cancel"
+            android:layout_alignEnd="@+id/cancel" />
+        </RadioGroup>
+
+        <EditText android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/nationalNumber"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:id="@+id/nation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/countries_array"
+            android:layout_above="@+id/cancel"
+            android:layout_alignLeft="@+id/date"
+            android:layout_alignStart="@+id/date"
+            android:layout_marginBottom="11dp">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:id="@+id/dateInput" />
+
+    </RelativeLayout>
+</RelativeLayout>

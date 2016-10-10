@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="first_name" type="id"/>
+    <item name="last_name" type="id"/>
+    <item name="username" type="id"/>
+    <item name="password" type="id"/>
+    <item name="re_password" type="id"/>
+    <item name="email_address" type="id"/>
+    <item name="contact" type="id"/>
+    <item name="submit" type="id"/>
+    <item name="cancel" type="id"/>
+    <item name="login" type="id"/>
+    <item name="title" type="id"/>
+    <item name="register" type="id"/>
+
+
+</resources>

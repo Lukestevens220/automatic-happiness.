@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+
+
+    defaultConfig {
+        applicationId "com.example.luke.myproject"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+                }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //    compile 'com.android.support:design:23.1.1'
+    //    compile 'com.microsoft.azure:azure-mobile-services-android-sdk:2.0.2+'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.code-troopers.betterpickers:library:3.0.1'
+    //  compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    //compile 'org.apache.httpcomponents:httpclient:4.5'
+    //compile files('libs/httpclient-4.5.2.jar')
+}

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/question_text"
+        android:textColor="#FF000000"
+        android:padding="24dp" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:textColor="#FF000000"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+        android:id="@+id/button_1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:text="@string/button_1"
+     />
+
+        <Button
+
+         android:id="@+id/button_2"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal|center"
+         android:text="@string/button_2" />
+
+
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:text="@string/button_3" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:text="@string/button_4" />
+
+
+
+
+</LinearLayout>
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_gravity="bottom|center"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight= "true">
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="120dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal|center"
+        android:text="@string/next_button"/>
+
+
+
+</FrameLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leave_room"
+        android:id="@+id/leave_room"
+        android:layout_gravity="left" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
