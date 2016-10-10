@@ -36,6 +36,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
     compile 'com.code-troopers.betterpickers:library:3.0.1'
+    // Realm
+    compile 'io.realm:realm-android:0.82.1'
     //  compile 'org.apache.httpcomponents:httpcore:4.4.1'
     //compile 'org.apache.httpcomponents:httpclient:4.5'
     //compile files('libs/httpclient-4.5.2.jar')
